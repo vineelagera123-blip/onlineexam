@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ONLINE EXAMINATION SYSTEM</title>
+    </head>
+    <body>
+        <h1>ONLINE EXAMINATION SYSTEM</h1>
+        <p>This is ONLINE EXAMINATION SYSTEM for Students</p>
+        <input type="name" id="username" placeholder="Enter your username">
+        <input type="email" id="email" placeholder="Enter your email">
+        <input type="password" id="password" placeholder="Enter your password">
+    </body>
+    <script src="script.js">
+        function validateForm() {
+            var username = document.getElementById("username").value;
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            if (username == "" || email == "" || password == "") {
+                alert("All fields must be filled out");
+                return false;
+            }
+        }
+    </script>
+</html>
